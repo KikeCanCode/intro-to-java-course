@@ -15,7 +15,6 @@ public class CollectionsExercises {
         //  - then add 5, 6, 8, 2, 9 to the list
         integer.add(5);
         integer.add(6);
-        
         integer.add(8);
         integer.add(2);
         integer.add(9);
@@ -81,7 +80,8 @@ public class CollectionsExercises {
 
     public HashMap<Integer, String> useHashMap() {
         // TODO: create an empty hash map
-        HashMap<Integer, String> hashMap = new HashMap<>(); // use capaital H and got errors so changed to h and the rest of the list
+
+        HashMap<Integer, String> hashMap = new HashMap<>(); //Chris used languages to name the hashMap after String.
         //  - add {1, TypeScript} entry to the map
         hashMap.put(1, "TypeScript");
         //  - add {2, Kotlin} entry to the map
@@ -94,12 +94,16 @@ public class CollectionsExercises {
         hashMap.put(5, "JavaScript");
         //  - add {6, Rust} entry to the map
         hashMap.put(6, "Rust");
+
         //  - determine the set of keys from the map and print it on the screen
         System.out.print(hashMap.keySet());
         //  - determine the set of values from the map and print it on the screen
         System.out.print(hashMap.values());
         //  - determine whether the map contains "English" as a language and print the result on the screen
+        
         System.out.print(hashMap.containsValue("English"));
+
+        return hashMap; // Chris used languages
        
     }
 
