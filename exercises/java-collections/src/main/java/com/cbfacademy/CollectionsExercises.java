@@ -86,7 +86,7 @@ public class CollectionsExercises {
         //  - add {2, Kotlin} entry to the map
         languages.put(2, "Kotlin");
         //  - add {3, Python} entry to the map
-        languages.put(3, "Phyton");
+        languages.put(3, "Python");
         //  - add {4, Java} entry to the map
         languages.put(4, "Java");
         //  - add {5, JavaScript} entry to the map
