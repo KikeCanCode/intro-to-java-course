@@ -81,7 +81,7 @@ public class CollectionsExercises {
 
     public HashMap<Integer, String> useHashMap() {
         // TODO: create an empty hash map
-        public HashMap<Integer, String> hashMap = new HashMap<>(); // use capaital H and got errors so changed to h and the rest of the list
+        HashMap<Integer, String> hashMap = new HashMap<>(); // use capaital H and got errors so changed to h and the rest of the list
         //  - add {1, TypeScript} entry to the map
         hashMap.put(1, "TypeScript");
         //  - add {2, Kotlin} entry to the map
