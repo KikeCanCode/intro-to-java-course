@@ -100,8 +100,7 @@ public class CollectionsExercises {
         System.out.print(hashMap.values());
         //  - determine whether the map contains "English" as a language and print the result on the screen
         System.out.print(hashMap.containsValue("English"));
-        //  - return the map
-       return hashMap;
+       
     }
 
     public String getName() {
