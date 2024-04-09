@@ -37,28 +37,31 @@ public class FlowControlExercises {
     }
     
 
-    public String whichMonth(Integer number) {
+    //public String whichMonth(Integer number) {
     // TODO - Implement this method such that
-    
+    public void whichMonth(Integer number) {
      //  - it returns the month corresponding to the input ${number}
      //  - if the ${number} is invalid, the method should return "Invalid month number"
         String [] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
-        int [] i = {1,2,3,4,5,6,7,8,9,10,11,12};
+        //int [] i  = {1,2,3,4,5,6,7,8,9,10,11,12};
+        // try with map
 
-        for (int i = 1; i <= 12; i++) {
-            if (i <12);
-           System.out.print(months[number]); 
-        } else {
-           System.out.print("Invalid month number");
-           
-        return whichMonth(number);
-    }
+        for (int i = 0; i <= 12; i++) {
+            if (i <=12){
+
+                System.out.print(months); 
+            } else {
+                System.out.print("Invalid month number");
+
+            }
+    
+        }       
         
 
-        }
+    }
     
 
-    public Map<String, Integer> sumOfOddsAndSumOfEvens() {
+   public Map<String, Integer> sumOfOddsAndSumOfEvens() {
     // TODO - Implement this method such that
 
     //  - creates and initialises a list of 100 numbers - from 1 to 100
@@ -76,20 +79,22 @@ public class FlowControlExercises {
         } else if (i % 3 == 0) {
 
         System.out.print(i+=i);
-     //  - returns a map with two entries:
+    //  - returns a map with two entries:
         //      {"SumOfEvens", calculatedSumOfEvens}, {"SumOfOdds", calculatedSumOfOdds}
 
         }
     
-       
-        return "sumOfEvens".calculatedSumOfEvens, "sumOfOdds".calculatedSumOfOdds;
+        return 
+
+        //)"sumOfEvens".calculatedSumOfEvens, "sumOfOdds".calculatedSumOfOdds;
     }
 
     
     public List<Integer> reverse(ArrayList<Integer> numbers) {
-        Integer [] numbers = new ArrayList<>(numbers);
-
+        
         // TODO - Implement this method such that
+        ArrayList<Integer> ArrayList = new ArrayList<>(numbers);
+
         //  - it takes an array list of integers
         //  - it returns the list in reverse order
         throw new RuntimeException("Not implemented");
@@ -99,3 +104,14 @@ public class FlowControlExercises {
         return "Flow Control Exercises";
     }
 }
+/*  public List<Integer> reverse(ArrayList<Integer> numbers) {
+        // Create a new ArrayList to store the reversed numbers
+        ArrayList<Integer> reversed = new ArrayList<>(numbers);
+
+        // Reverse the list using Collections.reverse() method
+        Collections.reverse(reversed);
+
+        // Return the reversed list
+        return reversed;
+    }
+}*/
