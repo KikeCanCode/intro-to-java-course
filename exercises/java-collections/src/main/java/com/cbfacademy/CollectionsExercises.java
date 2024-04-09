@@ -45,7 +45,6 @@ public class CollectionsExercises {
         
         //  - print the first element of the stack on the screen
         System.out.print(integer.firstElement());
-        
         //  - print the last element of the stack on the screen
         System.out.print(integer.lastElement());
         //  - invoke the method pop() on the stack and print the result on the screen
@@ -81,29 +80,29 @@ public class CollectionsExercises {
     public HashMap<Integer, String> useHashMap() {
         // TODO: create an empty hash map
 
-        HashMap<Integer, String> hashMap = new HashMap<>(); //Chris used languages to name the hashMap after String.
+        HashMap<Integer, String> languages = new HashMap<>(); 
         //  - add {1, TypeScript} entry to the map
-        hashMap.put(1, "TypeScript");
+        languages.put(1, "TypeScript");
         //  - add {2, Kotlin} entry to the map
-        hashMap.put(2, "Kotlin");
+        languages.put(2, "Kotlin");
         //  - add {3, Python} entry to the map
-        hashMap.put(3, "Phyton");
+        languages.put(3, "Phyton");
         //  - add {4, Java} entry to the map
-        hashMap.put(4, "Java");
+        languages.put(4, "Java");
         //  - add {5, JavaScript} entry to the map
-        hashMap.put(5, "JavaScript");
+        languages.put(5, "JavaScript");
         //  - add {6, Rust} entry to the map
-        hashMap.put(6, "Rust");
+        languages.put(6, "Rust");
 
         //  - determine the set of keys from the map and print it on the screen
-        System.out.print(hashMap.keySet());
+        System.out.print(languages.keySet());
         //  - determine the set of values from the map and print it on the screen
-        System.out.print(hashMap.values());
+        System.out.print(languages.values());
         //  - determine whether the map contains "English" as a language and print the result on the screen
         
-        System.out.print(hashMap.containsValue("English"));
+        System.out.print(languages.containsValue("English"));
 
-        return hashMap; // Chris used languages
+        return languages; 
        
     }
 
