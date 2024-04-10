@@ -18,10 +18,10 @@ public class CollectionsExercises {
         integer.add(8);
         integer.add(2);
         integer.add(9);
-        integer.add(2);
+       
 
         //  - add another 2 as the last element of the list
-        
+        integer.add(2);
         //  - add 4 as the 3rd element of the list
         integer.add(2, 4);
         //  - invoke the method element() on the list and print the result on the screen
@@ -34,29 +34,29 @@ public class CollectionsExercises {
     public Stack<Integer> useStack() {
         // TODO: create an empty stack
         
-            Stack<Integer> integer = new Stack<>();
+            Stack<Integer> integers = new Stack<>();
     
         //  - add 5, 6, 8, 9 to the stack
-            integer.add(5);
-            integer.add(6);
-            integer.add(8);
-            integer.add(2);
-            integer.add(9);
+            integers.add(5);
+            integers.add(6);
+            integers.add(8);
+            integers.add(9);
         
         //  - print the first element of the stack on the screen
-        System.out.print(integer.firstElement());
+        System.out.print(integers.firstElement());
         //  - print the last element of the stack on the screen
-        System.out.print(integer.lastElement());
+        System.out.print(integers.lastElement());
         //  - invoke the method pop() on the stack and print the result on the screen
-        System.out.print(integer.pop());
+        System.out.print(integers.pop());
         //  - invoke the push(4) method on the stack
-        System.out.print(integer.push(4));
+        System.out.print(integers.push(4));
         //  - return the stack
-        return integer;
+        return integers;
     }
 
     public ArrayDeque<Integer> useArrayDeque() {
         // TODO: create an empty arrayDeque
+
         ArrayDeque<Integer> arrayDeque = new ArrayDeque<>();
         
         //  - add 5, 6, 8, 9 to the queue
