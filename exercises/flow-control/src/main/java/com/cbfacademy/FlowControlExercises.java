@@ -137,3 +137,14 @@ public class FlowControlExercises {
 }
 
     
+//String whichMonth [] months = {"January","February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+//int [] number = {1,2,3,4,5,6,7,8,9,10,11,12};
+
+//for (int number =1; numbers <= 12; i++ ){
+   // System.out.println("Entre a number");
+    //if (number <=12);
+   // System.out.print("whichMonth" [number - 1]);
+   //return month;
+//}
+
+   
