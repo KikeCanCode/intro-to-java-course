@@ -153,4 +153,10 @@ public class FlowControlExercises {
         
   */
 
+// String[] whichMonth = ["january", "february", " march"];
+// integer number = [1,2,3];
+// whichMonth[number -1]; = doesnt know the number that will be given therefore, it gives the value of the array at position number- 1
+
+
+
    
