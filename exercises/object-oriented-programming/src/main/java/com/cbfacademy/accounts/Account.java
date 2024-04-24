@@ -13,21 +13,20 @@ The balance of an account may only be modified through the deposit() and withdra
 Consider the necessary instance variables and the appropriate access modifiers to allow any sub-classes to access those values*/
 
 public class Account {
-    
+    // Had to change these to public because Current and saving account were given error 
+    public int accountNumber;
     public double balance;
-    private int accountNumber;
-    private double deposit;
-    private double withdraw;
+    //public double deposit;
+    public double withdraw;
     //double overdraft
-//- constructor that accepts parameters representing the new account number and starting balance
+    //- constructor that accepts parameters representing the new account number and starting balance
     public Account(int accountNumber, double balance){
     //public Account(int accountNumber, double balance, double deposit, double withdraw){    example of a constroctor that will accept all ettribute
     this.accountNumber = accountNumber;
     this.balance = balance;
-    //this.deposit = deposit;
-    //this.withdraw = withdraw;
     }
     public double getBalance(){ //- returns the current account balance 
+        //double balance = getBalance(); 
         return balance;
     }
     public int getAccountNumber(){ //- returns the account number
@@ -39,7 +38,7 @@ public class Account {
         return newBalance;
     }
     public double withdraw(double requested) { //- withdraws funds from the account and returns the requested amount or 0 if the account has an insufficient balance
-       withdraw = balance - requested;
+      withdraw = balance - requested;
         if (requested > 0 && balance > requested){
             balance = balance - requested;
             return requested;
@@ -49,11 +48,12 @@ public class Account {
             return 0;
         }
     }
-    public static String format(double accountNumber, double balance, double deposit, double withdraw) {
+}
+    /*public static String format(double accountNumber, double balance, double deposit, double withdraw) {
         // Write code to return a string formatted as follows
         return String.format("account Number: %d. balance: %d. deposit: %d. withdraw: %d", accountNumber, balance, deposit, withdraw);
-    }
-}
+    }*/
+
 
 /*Notes - THIS SHOULD BE IMPLEMENTED IN THE SAVINGACCOUNT
 This account doesn't have an overdraft facility.
