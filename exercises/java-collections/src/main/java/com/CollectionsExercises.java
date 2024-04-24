@@ -32,7 +32,7 @@ public class CollectionsExercises {
     }
 
     public Stack<Integer> useStack() {
-        // TODO: create an empty stack
+        // create an empty stack
         
             Stack<Integer> integers = new Stack<>();
     
@@ -47,15 +47,18 @@ public class CollectionsExercises {
         //  - print the last element of the stack on the screen
         System.out.print(integers.lastElement());
         //  - invoke the method pop() on the stack and print the result on the screen
+        //int poppedElement = integers.pop();
         System.out.print(integers.pop());
+        //System.out.print(poppedElement);
         //  - invoke the push(4) method on the stack
-        System.out.print(integers.push(4));
+        integers.push(4);
+       // System.out.print(integers.push(4));
         //  - return the stack
         return integers;
     }
 
     public ArrayDeque<Integer> useArrayDeque() {
-        // TODO: create an empty arrayDeque
+        // create an empty arrayDeque
 
         ArrayDeque<Integer> arrayDeque = new ArrayDeque<>();
         
@@ -78,7 +81,7 @@ public class CollectionsExercises {
     }
 
     public HashMap<Integer, String> useHashMap() {
-        // TODO: create an empty hash map
+        // create an empty hash map
 
         HashMap<Integer, String> languages = new HashMap<>(); 
         //  - add {1, TypeScript} entry to the map

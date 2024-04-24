@@ -13,8 +13,11 @@ Integer binarySearch(Integer array[], Integer x, Integer low, Integer high) {
         // find the mid element 
         int mid = (low + high)/2; 
       // if x == to mid 
-     if (x == array[mid]);
-         return mid;
+     if (x == array[mid]){
+        return mid;
+
+     }
+         
         // if x is greater than mid elelemt search the right side of the list
     if (x > array[mid]) { // x is on the right side
         low = mid + 1;
@@ -29,5 +32,6 @@ Integer binarySearch(Integer array[], Integer x, Integer low, Integer high) {
         }  
 
     }
+ }
   
 
