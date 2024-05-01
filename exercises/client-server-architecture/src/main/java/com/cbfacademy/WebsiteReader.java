@@ -13,7 +13,7 @@ public class WebsiteReader { // Class
 /* Create a program that connects to the CBF academy website, then prints its content to the screen line by line.
 Whenever possible, use the try-with-resources construct we saw earlier in the course, and ensure to release all resources.*/
 
-    public void main (String[] args) throws Exception { // Throw exception method
+    public static void main (String[] args) throws Exception { // Throw exception method
         try { 
             URL myURL = new URL("https://codingblackfemales.com/"); // Defines the URL of the CBF academy website.
             URLConnection myURLConnection = myURL.openConnection();      //Creates a URL object with the specified URL.
@@ -26,11 +26,13 @@ Whenever possible, use the try-with-resources construct we saw earlier in the co
             application to read from the URL resource. This method opens a connection to the URL if
              it is not already open, retrieves the content, and returns an InputStream to read the content from.*/ 
             
-            BufferedReader in = new BufferedReader(new InputStreamReader(myURL.openStream())); // BufferReader reads web content
+            BufferedReader in = new BufferedReader(new InputStreamReader(myURL.openStream())); // BufferReader reads web content/ read content of a stream - Allows to process the lines and characters 
             String inputLine; //inputLine is just a variable used to store each line of text as it's read from the input stream within a loop. It's a common convention to use such a variable name when reading lines of input.
-                while ((inputLine = in.readLine()) != null)
+                while ((inputLine = in.readLine()) != null) {
                 System.out.println(inputLine);
+                }
                 in.close(); 
+
         /*The close() method of Reader Class in Java is used to close the stream and release the resources that were busy 
             in the stream, if any. This method has following results: If the stream is open, it closes the stream releasing the resources. 
             If the stream is already closed, it will have no effect.*/
