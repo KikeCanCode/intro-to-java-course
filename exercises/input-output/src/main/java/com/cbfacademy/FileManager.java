@@ -11,11 +11,13 @@ inputFile to the path defined by outputFile.
 Creates outputFile if it doesn't exist and overwrites it, if it does */
 import java.util.List;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.Reader;
+import java.io.Writer;
 import java.util.ArrayList;
 
 
@@ -42,7 +44,8 @@ public class FileManager {
     public void copy (String inputFile, String outputFile){
 
     try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-        BufferedReader writer = new BufferedReader(new OutputStreamWriter(outputFile))) {
+        
+       BufferedReader writer = new BufferedReader(new OutputStreamWriter(outputFile))) {
         String line;
     while ((line = reader.readLine()) != null) {
         writer.write(line);
