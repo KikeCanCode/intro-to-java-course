@@ -18,9 +18,7 @@ map -1 when an exception occurs*/
 
 public class FilenameException extends Exception {
 
-    private final String message;
-
-    //private message message;
+    String message;
 
     public FilenameException (String message){ 
 
@@ -30,10 +28,9 @@ public class FilenameException extends Exception {
     }
 
 
-
 @Override
 public String getMessage(){
-    return String.join( " - ", super.getMessage());
+    return this.message;
 }
 }
 
