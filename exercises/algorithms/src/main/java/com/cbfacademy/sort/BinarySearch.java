@@ -29,7 +29,8 @@ Integer binarySearch(Integer array[], Integer x, Integer low, Integer high) {
     
         return -1;
     
-        }  
+        }
+    return high;  
 
     }
  }
